@@ -31,7 +31,12 @@
     "sourceType": "module",
     "useJSXTextNode": true
   },
-  "rules": {},
+  "rules": {
+    "import/prefer-default-export": 0,
+    "react/jsx-filename-extension": [1, {
+      "extensions": [".jsx", ".tsx"]
+    }]
+  },
   "settings": {
     "react": {
       "version": "detect"

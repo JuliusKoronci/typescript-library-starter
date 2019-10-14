@@ -1,35 +1,26 @@
 {
   "compilerOptions": {
-    "declaration": true,
-    "declarationDir": "./lib",
-    "module": "commonjs",
-    "esModuleInterop": true,
-    "lib": [
-      "dom",
-      "esnext"
-    ],
-    "target": "es5",
     "moduleResolution": "node",
-    "outDir": "./lib",
-    "sourceMap": true,
-    "removeComments": true,
+    "target": "es5",
+    "module":"es2015",
+    "lib": ["es2015", "es2016", "es2017", "dom"],
     "jsx": "react",
     "strict": true,
-    "alwaysStrict": true,
-    "allowUnreachableCode": false,
-    "noImplicitAny": true,
-    "noImplicitThis": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noImplicitReturns": true,
-    "noFallthroughCasesInSwitch": true,
-    "forceConsistentCasingInFileNames": true
+    "sourceMap": true,
+    "declaration": true,
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "declarationDir": "lib",
+    "outDir": "lib",
+    "typeRoots": [
+      "node_modules/@types"
+    ]
   },
   "include": [
-    "./src/**/*"
+    "src"
   ],
   "exclude": [
-    "node_modules",
-    "dist"
+    "**/__tests__/*"
   ]
 }

@@ -18,8 +18,11 @@ module.exports = {
         test: /\.(ts|js)x?$/,
         exclude: /node_modules/,
         use: {
-          loader: 'eslint-loader'
-        },
+          loader: 'eslint-loader',
+          options: {
+            "fix": true
+          }
+        }
       },
       {
         test: /\.(js)x?$/,
