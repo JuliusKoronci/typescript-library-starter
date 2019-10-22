@@ -22,7 +22,7 @@
     "lint:style": "sass-lint -c .sass-lint.yml './src/**/*.scss' -v -q",
     "docs": "typedoc --out docs ./src",
     "report-coverage": "cat ./coverage/lcov.info | coveralls",
-    "travis-deploy-once": "travis-deploy-once",
+    "coveralls": "cat ./src/coverage/lcov.info | node node_modules/.bin/coveralls",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },

@@ -4,10 +4,9 @@ cache:
 notifications:
   email: true
 node_js:
-  - '10'
   - '11'
 script:
   - yarn build
 after_success:
-  - yarn travis-deploy-once "yarn report-coverage"
+  - COVERALLS_REPO_TOKEN=$coveralls_repo_token npm run coveralls
 
