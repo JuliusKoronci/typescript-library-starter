@@ -8,5 +8,5 @@ node_js:
 script:
   - yarn build
 after_success:
-  - COVERALLS_REPO_TOKEN=$coveralls_repo_token npm run coveralls
+  - COVERALLS_REPO_TOKEN=$coveralls_repo_token yarn coveralls
 
