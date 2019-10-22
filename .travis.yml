@@ -9,3 +9,5 @@ node_js:
 script:
   - yarn build
 after_success:
+  - yarn travis-deploy-once "yarn report-coverage"
+
