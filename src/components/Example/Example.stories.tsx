@@ -1,11 +1,9 @@
-import React from 'react';
-import {Example} from './Example';
+import React, { FC } from "react";
+import { Example } from "./Example";
 
 export default {
   component: Example,
-  title: 'Example',
+  title: "Example"
 };
 
-export const example = () => (
-  <Example />
-);
+export const example: FC = () => <Example />;

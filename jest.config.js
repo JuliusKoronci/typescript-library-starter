@@ -1,13 +1,13 @@
 module.exports = {
-  "roots": [
+  roots: [
     "<rootDir>/src"
   ],
-  preset: 'ts-jest',
+  setupFilesAfterEnv: ["<rootDir>src/setupTests.ts"],
   transform: {
     '^.+\\.tsx?$': 'babel-jest',
   },
-  "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.tsx?$",
-  "moduleFileExtensions": [
+  testRegex: "(/__tests__/.*|(\\.|/)(test|spec))\\.tsx?$",
+  moduleFileExtensions: [
     "ts",
     "tsx",
     "js",
@@ -15,7 +15,7 @@ module.exports = {
     "json",
     "node"
   ],
-  "snapshotSerializers": ["enzyme-to-json/serializer"],
+  snapshotSerializers: ["enzyme-to-json/serializer"],
   coverageThreshold: {
     global: {
       branches: 100,
@@ -28,7 +28,7 @@ module.exports = {
     '!src/**/*.d.ts',
     '!src/**/*.stories.{tsx,jsx}',
     '!src/**/types.ts',
-    '!src/setupTests.js',
+    '!src/setupTests.ts',
     'src/**/*.{ts,tsx,js,jsx}',
   ],
   coveragePathIgnorePatterns: [
