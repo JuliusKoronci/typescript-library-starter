@@ -1,6 +1,6 @@
 [![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
 [![Travis](https://travis-ci.com/JuliusKoronci/typescript-library-starter.svg?branch=master)](https://travis-ci.org/JuliusKoronci/typescript-library-starter)
-[![Coverage Status](https://coveralls.io/repos/github/JuliusKoronci/typescript-library-starter/badge.svg?branch=master)](https://coveralls.io/github/JuliusKoronci/typescript-library-starter?branch=master)
+[![Coverage Status](https://coveralls.io/repos/github/JuliusKoronci/typescript-library-starter/badge.svg?branch=master)](https://coveralls.io/github/JuliusKoronci/typescript-library-starter?branch=master) [![Greenkeeper badge](https://badges.greenkeeper.io/JuliusKoronci/typescript-library-starter.svg)](https://greenkeeper.io/)
 
 # TypeScript Library Starter
 What's in it? :) 
